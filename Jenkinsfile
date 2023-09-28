@@ -9,12 +9,6 @@ pipeline {
     ARTIFACT_ID = "elbuo8/webapp:${env.BUILD_NUMBER}"
   }
    stages {
-     stage('Initialize'){
-        def dockerHome = tool 'myDocker'
-        env.PATH = "${dockerHome}/bin:${env.PATH}"
-    }
-  
-  
    stage('Building image') {
       steps{
           sh '''
