@@ -11,9 +11,9 @@ pipeline {
    stages {
    stage('Building image') {
       steps{
-        echo 'algo'
+        ls -a
           sh '''
-          cd app/ &&
+          cd  &&
           docker build -t testapp .
              '''  
         }
