@@ -28,10 +28,8 @@ pipeline {
       steps{
         sh '''
         docker image ls
-        docker tag testapp 127.0.0.1:5000/mguazzardo/testapp
-        docker image push 127.0.0.1:5000/mguazzardo/testapp  
-        docker image ls 
-        '''
+        docker tag testapp cualquiercosa
+        docker image push cualquiercosa
         }
       }
     }
