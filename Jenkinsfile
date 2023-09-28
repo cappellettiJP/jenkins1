@@ -11,10 +11,10 @@ pipeline {
    stages {
    stage('Building image') {
       steps{
-          sh 'npm install'
+          sh '''
           cd app
           docker build -t testapp .
-             ''  
+             '''  
         }
     }
   
