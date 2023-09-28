@@ -14,8 +14,6 @@ pipeline {
           sh 'docker build -t testapp .'
        		 }
    	 }	
-   }
-  
   
     stage('Run tests') {
       steps {
