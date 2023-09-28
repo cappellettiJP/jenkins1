@@ -12,7 +12,7 @@ pipeline {
    stage('Building image') {
       steps{
           sh '''
-          cd elbuo8
+          cd jenkins1
           docker build -t testapp .
              '''  
         }
