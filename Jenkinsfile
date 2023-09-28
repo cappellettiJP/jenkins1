@@ -12,7 +12,7 @@ pipeline {
    stage('Building image') {
       steps{
           sh '''
-          cd jenkins1
+          cd ARTIFACT_ID
           docker build -t testapp .
              '''  
         }
