@@ -13,7 +13,7 @@ pipeline {
       steps{
         echo 'algo'
           sh '''
-          cd ARTIFACT_ID &&
+          cd /app &&
           docker build -t testapp .
              '''  
         }
