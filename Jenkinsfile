@@ -28,8 +28,9 @@ pipeline {
       steps{
         sh '''
         docker image ls
-        docker tag testapp cualquiercosa
-        docker image push cualquiercosa
+        docker tag testapp localhost:5000/mguazzardo/testapp
+        docker image push localhost:5000/mguazzardo/testapp
+        '''
         }
       }
     }
