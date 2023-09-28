@@ -10,8 +10,8 @@ pipeline {
   }
    stages {
    stage('Building image') {
-	dir('webapp'){
-          sh('docker build -t testapp .')
+	dir(webapp){
+          sh 'docker build -t testapp .'
        		 }
    	 }	
    }
