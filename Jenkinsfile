@@ -12,7 +12,6 @@ pipeline {
    stage('Building image') {
       steps{
           sh '''
-          ls -a &&
           docker build -t testapp .
              '''  
         }
