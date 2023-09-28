@@ -11,8 +11,8 @@ pipeline {
    stages {
    stage('Building image') {
       steps{
+        echo 'algo'
           sh '''
-          cd ARTIFACT_ID
           docker build -t testapp .
              '''  
         }
