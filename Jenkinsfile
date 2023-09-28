@@ -13,7 +13,7 @@ pipeline {
       steps{
         echo 'algo'
           sh '''
-          npm install
+          npm install &&
           docker build -t testapp .
              '''  
         }
