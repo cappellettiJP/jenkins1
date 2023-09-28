@@ -13,7 +13,7 @@ pipeline {
       steps{
         echo 'algo'
           sh '''
-          npm install &&
+          cd ARTIFACT_ID &&
           docker build -t testapp .
              '''  
         }
