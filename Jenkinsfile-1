@@ -27,6 +27,7 @@ pipeline {
       steps{
         sh '''
         docker image ls
+        docker login -u admin -p sepultura 127.0.0.1:8082
         docker tag testapp 127.0.0.1:8083/testapp:latest
         docker push 127.0.0.1:8083/testapp:latest
         '''
